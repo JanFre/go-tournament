@@ -1,0 +1,82 @@
+{
+  "TOURNAMENT_HEADER": "Warszawski Turniej Go",
+  "MENU": {
+    "MAIN": "Strona główna",
+    "REGISTRATION": "Rejestracja",
+    "PARTICIPANTS": "Uczestnicy",
+    "PAIRING": "Parowanie",
+    "RESULTS": "Wyniki",
+    "VENUE": "Miejsce"
+  },
+  "HEADERS": {
+    "MAIN": "Strona główna",
+    "REGISTRATION": "Formularz rejestracyjny",
+    "PARTICIPANTS": "Zarejestrowani uczestnicy",
+    "PAIRING": "Parowanie",
+    "RESULTS": "Wyniki",
+    "VENUE": "Miejsce rozgrywek",
+    "LOGIN": "Logowanie Sędziego Turnieju",
+    "REFEREE": "Panel sędziego"
+  },
+  "REGISTERED_PLAYERS_TABLE_HEADER": {
+    "FIRST_NAME": "Imię",
+    "LAST_NAME": "Nazwisko",
+    "CLUB": "Klub",
+    "RATE": "Siła",
+    "GOR": "GOR"
+  },
+  "WALL_LIST_TABLE_HEADER": {
+    "POSITION": "Pozycja",
+    "NAME": "Nazwisko i imię",
+    "CLUB": "Klub",
+    "RATE": "Siła",
+    "GOR": "EGF GOR",
+    "RESULT": "Wynik",
+    "GAMES": "Rozegrane gry",
+    "POINTS": "Punkty",
+    "SCOREX": "ScoreX",
+    "SOS": "SOS",
+    "SOSOS": "SOSOS"
+  },
+  "REGISTRATION": {
+    "IS_EGF": "Jestem członkiem EGF",
+    "SELECT_LAST_NAME": "Wybierz nazwisko",
+    "INFORMATION": "Uwagi",
+    "REGISTER": "Zarejestruj",
+    "ALREADY_REGISTERED": "Gracz już jest zarejestorwany!",
+    "FIRST_NAME": "Imię",
+    "LAST_NAME": "Nazwisko",
+    "CLUB": "Klub",
+    "COUNTRY": "Kraj",
+    "RATE": "Siła"
+  },
+  "LOGIN_PAGE": {
+    "LOGIN_NAME": "Login",
+    "PASSWORD": "Hasło",
+    "LOG_IN": "Zaloguj",
+    "HIDE_PASSWORD": "Ukryj hasło"
+  },
+  "REFEREE_PAGE": {
+    "GET_REGISTERED_PLAYERS": "Pobierz listę graczy w formacie MacMahon",
+    "DROP_RESULTS": "Tu wrzuć plik tekstowy z wynikami rundy:",
+    "CLOSE_REGISTRATION": "Zamknij zapisy na turniej",
+    "OPEN_REGISTRATION": "Otwórz zapisy na turniej",
+    "LOG_OUT": "Wyloguj",
+    "DESCRIPTION": "Opis",
+    "SELECT_FILE":"Wybierz plik",
+    "UPLOAD_FILE":"Załaduj"
+  },
+  "WALL_LIST_ERROR": "Próbujesz załadować złą tabelę wyników! Aktualnie spodziewany numer rundy = ",
+  "ROUND_NUMBER_UPDATE_SUCCESS": "Numer rundy zaktualizowany.",
+  "ROUND_NUMBER_UPDATE_FAILED": "Nieudana aktualizacja numeru rundy!",
+  "WALL_LIST_IMOPRT_SUCCESS": "Import tabeli wyników udany.",
+  "WALL_LIST_IMOPRT_FAILED": "Import tabeli wyników nieudany!",
+  "REGISTRATION_CLOSED": "Błąd rejestracji gracza! Zapisy na turniej zostły już zamknięte!",
+  "PLAYER_ALREADY_REGISTERED": "Gracz już jest zarejestorwany!",
+  "PLAYER_REGISTRATION_ERROR": "Błąd przy rejestracji gracza!",
+  "PLAYER_REGISTRATION_SUCCESS": " został pomyślnie zarejestrowany.",
+  "PLAYER": "Gracz  ",
+  "WRONG_FILE_TYPE": "Błędny typ pliku",
+  "SESSION_EXPIRED": "Twoja sesja wygasła",
+  "FOOTER": "Warszawa 2021"
+}

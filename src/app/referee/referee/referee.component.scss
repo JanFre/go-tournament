@@ -1,0 +1,104 @@
+.uploadfilecontainer {
+  background-image: url("../../../assets/cloud.png");
+  background-repeat: no-repeat;
+  background-size: 150px;
+  background-position: center;
+  height: 200px;
+  width: 50%;
+  margin: 10px auto;
+  border: 2px dashed #1C8ADB;
+  border-radius: 10px;
+}
+
+.uploadfilecontainer:hover {
+  cursor: pointer;
+  background-color: #9ecbec !important;
+  opacity: 0.8;
+}
+
+.files-list {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 10px auto;
+  background: #ffffff;
+  border: 1px dashed;
+  border-radius: 12px;
+  padding: 5px;
+  color: #1c8adb;
+}
+
+.files-list .delete-file {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.files-list .delete-file img {
+  width: 30px;
+}
+
+.login-container {
+  margin: 32px;
+}
+
+.login-form {
+  min-width: 150px;
+  max-width: 225px;
+  width: 100%;
+}
+
+.login-full-width {
+  width: 100%;
+}
+
+.files-drag-drop-width {
+  color: #0f598d;
+  font-size: 150%;
+  font: bold;
+  background-color: transparent;
+  text-decoration: none;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.file-download {
+  margin-left: 20px;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.logout {
+  margin-left: 20px;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.close-open-registration {
+  margin-left: 20px;
+  margin-bottom: 16px;
+  justify-content: center;
+  display: flex;
+}
+
+.secret-content {
+  margin-left: 20px;
+  margin: auto;
+  justify-content: center;
+  color: #0f598d;
+  font-size: 120%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.secret-tittle {
+  margin-left: 20px;
+  margin: auto;
+  justify-content: center;
+  color: #0f598d;
+  font-size: 200%;
+  display: flex;
+  margin-bottom: 20px;
+}

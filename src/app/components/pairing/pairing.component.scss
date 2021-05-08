@@ -1,0 +1,28 @@
+.links {
+  font-size: 150%;
+  font: bold;
+  background-color: transparent;
+}
+a:link {
+  color: green;
+  text-decoration: none;
+  @extend .links;
+}
+a:visited {
+  color: gray;
+  text-decoration: none;
+  @extend .links;
+}
+a:hover {
+  color: orange;
+  text-decoration: underline;
+  @extend .links;
+}
+a:active {
+  color: yellow;
+  text-decoration: underline;
+  @extend .links;
+}
+.pairings-list {
+  margin-top: 10px;
+}

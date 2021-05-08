@@ -1,0 +1,7 @@
+
+<mat-toolbar color="primary">
+  <span class="fill-remaining-space">{{"HEADERS.PAIRING" | translate}}</span>
+</mat-toolbar>
+<ul class="pairings-list">
+  <li *ngFor="let pairing of pairings"><a href="{{pairing.url}}" target="_blank">{{pairing.desc}}</a></li>
+</ul>

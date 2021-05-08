@@ -1,0 +1,31 @@
+<br>
+<div>
+  <div>
+    <p class="secret-tittle">{{refereeData.desc}}</p>
+    <p  class="secret-content">{{refereeData.data}}</p>
+  </div>
+  <div>
+    <div class="file-download">
+      <br>
+      <button mat-raised-button color="primary" (click)="exportPlayers()">{{"REFEREE_PAGE.GET_REGISTERED_PLAYERS" | translate}}</button>
+      <br>
+    </div>
+    <br>
+    <div class="uploadfilecontainer" (click)="fileInput.click()" (dragover)="onDragOver($event)" (drop)="uploadDropedFilesWithResults($event)">
+      <div class="files-drag-drop-width">{{"REFEREE_PAGE.DROP_RESULTS" | translate}}</div>
+      <input hidden type="file" #fileInput (change)="uploadFilesWithResults($event.target.files)">
+    </div>
+    <div class="msg"><p>{{msg}}</p></div>
+  </div>
+  <div class="close-open-registration" *ngIf="registrationClosed">
+    <button mat-raised-button color="primary" (click)="closeRegistration()">{{"REFEREE_PAGE.OPEN_REGISTRATION" | translate}}</button>
+  </div>
+  <div class="close-open-registration" *ngIf="!registrationClosed">
+    <button mat-raised-button color="primary" (click)="closeRegistration()">{{"REFEREE_PAGE.CLOSE_REGISTRATION" | translate}}</button>
+  </div>
+  <div class="logout">
+    <br>
+    <button mat-raised-button color="primary" (click)="logout()">{{"REFEREE_PAGE.LOG_OUT" | translate}}</button>
+    <br>
+  </div>
+</div>

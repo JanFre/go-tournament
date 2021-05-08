@@ -1,0 +1,44 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="['']">{{"MENU.MAIN" | translate}}</a>
+      <div *ngIf="!isRegistrationClosed"><a mat-list-item [routerLink]="['registration']">{{"MENU.REGISTRATION" | translate}}</a></div>
+      <a mat-list-item [routerLink]="['participants']">{{"MENU.PARTICIPANTS" | translate}}</a>
+      <a mat-list-item [routerLink]="['pairing']">{{"MENU.PAIRING" | translate}}</a>
+      <a mat-list-item [routerLink]="['results']">{{"MENU.RESULTS" | translate}}</a>
+      <a mat-list-item [routerLink]="['venue']">{{"MENU.VENUE" | translate}}</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" class="ml-2 tb mr-0">
+      <div  class="container-fluid px-0 mt-2">
+        <div class="row mt-2">
+          <div class="col mr-auto">
+            <button class="pl-0"
+            type="button"
+            aria-label="Toggle sidenav"
+            mat-icon-button
+            (click)="drawer.toggle()"
+            *ngIf="isHandset$ | async">
+            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+            </button>
+            {{"TOURNAMENT_HEADER" | translate}}
+          </div>
+          <div class="col mb-s-1">
+            <mat-radio-group aria-label="Select an option" (change)="changeLanguage($event)">
+              <mat-radio-button value="pl" [checked]="true">Polski</mat-radio-button>
+              <mat-radio-button value="en" [checked]="false">English</mat-radio-button>
+            </mat-radio-group>
+          </div>
+        </div>
+      </div>
+    </mat-toolbar>
+    <div class="ml-2">
+      <ng-content></ng-content>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

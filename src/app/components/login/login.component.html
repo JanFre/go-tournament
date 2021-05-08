@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+  <span class="fill-remaining-space">{{"HEADERS.LOGIN" | translate}}</span>
+</mat-toolbar>
+
+<div class="login-container">
+  <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)" class="login-form">
+    <br>
+    <mat-form-field appearance="fill" class="login-full-width">
+      <input matInput placeholder="Login" formControlName="login">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill" class="login-full-width">
+      <mat-label>{{"LOGIN_PAGE.PASSWORD" | translate}}</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+    <div class="form-element">
+      <button mat-raised-button color="primary" type="submit" class="button" [disabled]="!loginForm.valid">
+        {{"LOGIN_PAGE.LOG_IN" | translate}}
+      </button>
+    </div>
+  </form>
+  <br>
+  <p class="information">{{msg}}</p>
+</div>

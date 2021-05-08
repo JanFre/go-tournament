@@ -1,0 +1,40 @@
+.links {
+  font-size: 150%;
+  font: bold;
+  background-color: transparent;
+}
+a:link {
+  color: green;
+  text-decoration: none;
+  @extend .links;
+}
+a:visited {
+  color: gray;
+  text-decoration: none;
+  @extend .links;
+}
+a:hover {
+  color: orange;
+  text-decoration: underline;
+  @extend .links;
+}
+a:active {
+  color: yellow;
+  text-decoration: underline;
+  @extend .links;
+}
+.results-list {
+  margin-top: 10px;
+}
+.just-col-1 {
+  float: right;
+}
+.won-class {
+  background-color: rgb(243, 106, 82);
+}
+.lost-class {
+  background-color: rgb(60, 241, 100);
+}
+.selected-player-class {
+  background-color: rgb(240, 198, 93);
+}

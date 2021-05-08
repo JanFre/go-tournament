@@ -1,0 +1,39 @@
+.sidenav-container {
+  height: calc(100% - 60px);
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.tittle {
+  text-align: left;
+}
+
+.lang {
+  text-align: right;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+
+.mat-radio-group {
+  margin-right: 10px;
+}
+
+.tb {
+  width: auto;
+  height: auto;
+  margin-bottom: -10px;
+}

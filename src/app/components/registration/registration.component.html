@@ -1,0 +1,80 @@
+<div *ngIf="!isRegistrationClosed">
+<mat-toolbar color="primary">
+  <span class="fill-remaining-space">{{"HEADERS.REGISTRATION" | translate}}</span>
+</mat-toolbar>
+
+<div class="container">
+  <form [formGroup]="playersForm" (ngSubmit)="registerPlayer(playersForm.value)" class="form">
+    <br>
+    <div class="form-element">
+      <mat-checkbox formControlName="isEGF">{{"REGISTRATION.IS_EGF" | translate}}</mat-checkbox>
+    </div>
+
+    <div *ngIf="isEGF">
+      <mat-form-field class="register">
+        <input type="text"
+           [placeholder]="'REGISTRATION.SELECT_LAST_NAME' | translate"
+           aria-label="Number"
+           matInput
+           [formControl]="playersToSelect"
+           [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let option of selectedPlayers" [value]="option.name + ' '
+             + option.grade + ' ' + option.club + ' ' + option.pin">
+          {{option.name}} {{option.grade}} {{option.club}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </div>
+    <div *ngIf="!isEGF">
+      <mat-form-field class="form-element">
+        <input matInput [placeholder]="'REGISTRATION.FIRST_NAME' | translate" formControlName="firstName">
+        <mat-error *ngIf="playersForm.get('firstName').hasError('required')"></mat-error>
+      </mat-form-field>
+      <mat-form-field class="form-element">
+        <input matInput [placeholder]="'REGISTRATION.LAST_NAME' | translate" formControlName="lastName">
+        <mat-error *ngIf="playersForm.get('lastName').hasError('required')"></mat-error>
+      </mat-form-field>
+      <mat-form-field class="form-element">
+        <input matInput [placeholder]="'REGISTRATION.CLUB' | translate" formControlName="club">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" *ngIf="!isEN">
+        <mat-label>{{"REGISTRATION.COUNTRY" | translate}}</mat-label>
+        <mat-select formControlName="country">
+          <mat-option *ngFor="let country of countryList" [value]="country.alfa2">
+            {{country.plName}} {{country.alfa2}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill" *ngIf="isEN">
+        <mat-label>{{"REGISTRATION.COUNTRY" | translate}}</mat-label>
+        <mat-select formControlName="country">
+          <mat-option *ngFor="let country of countryList" [value]="country.alfa2">
+            {{country.enName}} {{country.alfa2}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="fill">
+        <mat-label>{{"REGISTRATION.RATE" | translate}}</mat-label>
+        <mat-select formControlName="rate">
+          <mat-option *ngFor="let rating of ratings" [value]="rating.name">
+            {{rating.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <mat-form-field class="form-element">
+      <textarea matInput [placeholder]="'REGISTRATION.INFORMATION' | translate" matTextareaAutosize matAutosizeMinRows="2" matAutosizeMaxRows="5"
+        formControlName="notes"></textarea>
+    </mat-form-field>
+    <div class="form-element">
+      <button mat-raised-button color="primary" type="submit" class="button" [disabled]="!playersForm.valid">
+        {{"REGISTRATION.REGISTER" | translate}}
+      </button>
+    </div>
+  </form>
+</div>
+
+</div>

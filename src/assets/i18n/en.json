@@ -1,0 +1,82 @@
+{
+  "TOURNAMENT_HEADER": "Warsaw Go Tournament",
+  "MENU": {
+    "MAIN": "Main page",
+    "REGISTRATION": "Registration",
+    "PARTICIPANTS": "Registered participants",
+    "PAIRING": "Pairing",
+    "RESULTS": "Results",
+    "VENUE": "Venue"
+  },
+  "HEADERS": {
+    "MAIN": "Main page",
+    "REGISTRATION": "Registration",
+    "PARTICIPANTS": "Registered participants",
+    "PAIRING": "Pairing",
+    "RESULTS": "Results",
+    "VENUE": "Venue",
+    "LOGIN": "Referee login",
+    "REFEREE": "Referee panel"
+  },
+  "REGISTERED_PLAYERS_TABLE_HEADER": {
+    "FIRST_NAME": "First Name",
+    "LAST_NAME": "Last Name",
+    "CLUB": "Club",
+    "RATE": "Strength",
+    "GOR": "GOR"
+  },
+  "WALL_LIST_TABLE_HEADER": {
+    "POSITION": "Position",
+    "NAME": "Name",
+    "CLUB": "Club",
+    "RATE": "Strength",
+    "GOR": "EGF GOR",
+    "RESULT": "Result",
+    "GAMES": "Played games",
+    "POINTS": "Points",
+    "SCOREX": "ScoreX",
+    "SOS": "SOS",
+    "SOSOS": "SOSOS"
+  },
+  "REGISTRATION": {
+    "IS_EGF": "I am EGF player",
+    "SELECT_LAST_NAME": "Choose your surname",
+    "INFORMATION": "Additional information",
+    "REGISTER": "Register",
+    "ALREADY_REGISTERED": "Player is already registered!",
+    "FIRST_NAME": "First name",
+    "LAST_NAME": "Last name",
+    "CLUB": "Club",
+    "COUNTRY": "Country",
+    "RATE": "Rate"
+  },
+  "LOGIN_PAGE": {
+    "LOGIN_NAME": "Login",
+    "PASSWORD": "Password",
+    "LOG_IN": "Log in",
+    "HIDE_PASSWORD": "Hide password"
+  },
+  "REFEREE_PAGE": {
+    "GET_REGISTERED_PLAYERS": "Get list of registered players",
+    "DROP_RESULTS": "Drag and drop results:",
+    "CLOSE_REGISTRATION": "Close registration",
+    "OPEN_REGISTRATION": "Open registration",
+    "LOG_OUT": "Log out",
+    "DESCRIPTION": "Description",
+    "SELECT_FILE":"Select file",
+    "UPLOAD_FILE":"Upload"
+  },
+  "WALL_LIST_ERROR": "You are trying to load the wrong wall list! Current expected round nr = ",
+  "ROUND_NUMBER_UPDATE_SUCCESS": "Round number updated.",
+  "ROUND_NUMBER_UPDATE_FAILED": "Round number update failed!",
+  "WALL_LIST_IMOPRT_SUCCESS": "Wall list import successful!",
+  "WALL_LIST_IMOPRT_FAILED": "Wall list import failed!",
+  "REGISTRATION_CLOSED": "Player registration error! Registration is already closed!",
+  "PLAYER_ALREADY_REGISTERED": "Player already registered!",
+  "PLAYER_REGISTRATION_ERROR": "Player registration error!",
+  "PLAYER_REGISTRATION_SUCCESS": " successfuly registered!",
+  "PLAYER": "Player ",
+  "WRONG_FILE_TYPE": "Wrong typy of file",
+  "SESSION_EXPIRED": "Your session has expired",
+  "FOOTER": "Warsaw 2021"
+}
